@@ -1,0 +1,53 @@
+<!doctype>
+<html>
+<title></title>
+<head>
+
+
+<body bgcolor="sky blue">
+
+ 
+ <table>
+
+    <tr>
+        <td colspan="3">
+            <textarea id='inputTextToSave' cols="40" rows="23"></textarea>
+        </td>
+    </tr>
+  
+ <b><font color="pink"> <h1>MY DIARY</></h1></b></div></font>
+<img src="img/pic.png">
+ <font color="pink"> <b> <h1>Start making your memories! :)</></h1></b></div></font>   
+</table>
+
+ <button id='save'onclick="saveTextAsFile()">Save</button>
+ <input id = 'back' type="reset" value=cancel onclick = "window.local.href='C:/Users/pc1/Desktop/my apps/2ndapp/www/index.html'">
+  
+<script type="text/javascript">
+
+
+function saveTextAsFile()
+{
+
+    var save = document.getElementById('inputTextToSave').value;
+    localStorage.setItem("text",save);
+}
+
+
+</script>                               
+
+ 
+
+ 
+</head>
+
+ 
+	</body>
+
+
+
+	</html>
+	
+
+
+
